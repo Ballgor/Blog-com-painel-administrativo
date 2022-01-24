@@ -5,8 +5,8 @@ router.get("/articles", (req, res) => {
     res.send("ROTA DE ARTIGOS")
 });
 
-router.get("/admin/articles/new", (req,res) =>{
-    redirect.send("ROTA PARA CRIAR UMA NOVO ARTIGO")
+router.get("/admin/articles/new", (req,res) => {
+    res.render("admin/articles/new")
 })
 
 module.exports = router;
